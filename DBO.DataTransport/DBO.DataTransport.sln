@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.HelpersSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.HelpersCore", "DBO.DataTransport.HelpersCore\DBO.DataTransport.HelpersCore.csproj", "{40A7EC73-C0AC-4709-9129-751DA8EBF875}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBO.DataTransport.DBOAuth.SQL", "DBO.DataTransport.SQL\DBO.DataTransport.DBOAuth.SQL.sqlproj", "{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{40A7EC73-C0AC-4709-9129-751DA8EBF875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40A7EC73-C0AC-4709-9129-751DA8EBF875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40A7EC73-C0AC-4709-9129-751DA8EBF875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
