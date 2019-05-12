@@ -23,25 +23,25 @@ namespace DBO.DataTransport.DBOStore.DataModel.Pluralazing
                 "ActionTypes","ActionType"
             },
             {
-                "DBOTransportHistory","DBOTransportHistory"
+                "DbotransportHistory","DBOTransportHistory"
             },
             {
-                "PostgreSQLConfigurations","PostgreSQLConfiguration"
+                "PostgreSqlconfigurations","PostgreSQLConfiguration"
             },
             {
-                "ProjectRDBMSRelationships","ProjectRDBMSRelationship"
+                "ProjectRdbmsrelationships","ProjectRDBMSRelationship"
             },
             {
                 "Projects","Project"
             },
             {
-                "RDBMSConfigurations","RDBMSConfiguration"
+                "Rdbmsconfigurations","RDBMSConfiguration"
             },
             {
-                "SQLServerConfigurations","SQLServerConfiguration"
+                "SqlserverConfigurations","SQLServerConfiguration"
             },
             {
-                "SupportedRDBMS","SupportedRDBMS"
+                "SupportedRdbms","SupportedRDBMS"
             },
             {
                 "", ""

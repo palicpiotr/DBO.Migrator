@@ -58,4 +58,19 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Projects.sql" />
+    <None Include="SupportedRDBMS.sql" />
+    <None Include="Migrations.sql" />
+    <None Include="__EFMigrationsHistory.sql" />
+    <None Include="DBOTransportHistory.sql" />
+    <None Include="ActionTypes.sql" />
+    <None Include="ForeignKeys.sql" />
+    <None Include="RDBMSConfigurations.sql" />
+    <None Include="ProjectRDBMSRelationships.sql" />
+    <None Include="PostgreSQLConfigurations.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLServerConfigurations.sql" />
+  </ItemGroup>
 </Project>

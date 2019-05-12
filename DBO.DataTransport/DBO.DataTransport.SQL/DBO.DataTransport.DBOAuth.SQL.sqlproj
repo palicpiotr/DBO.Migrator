@@ -67,5 +67,6 @@
     <None Include="AspNetUserTokens.sql" />
     <None Include="CreateIndexes.sql" />
     <None Include="Migrations.sql" />
+    <None Include="__EFMigrationsHistory.sql" />
   </ItemGroup>
 </Project>

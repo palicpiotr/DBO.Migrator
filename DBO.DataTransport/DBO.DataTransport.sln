@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.DBOStore.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.DBOAuth.DataModel", "DBO.DataTransport.DBOAuth.DataModel\DBO.DataTransport.DBOAuth.DataModel.csproj", "{7E96132E-3824-4B9B-A709-71EA2602C00E}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBO.DataTransport.DBOStore.SQL", "DBO.DataTransport.DBOStore.SQL\DBO.DataTransport.DBOStore.SQL.sqlproj", "{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,12 @@ Global
 		{7E96132E-3824-4B9B-A709-71EA2602C00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E96132E-3824-4B9B-A709-71EA2602C00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E96132E-3824-4B9B-A709-71EA2602C00E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
