@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>DBO.DataTransport.DBO.SQL</Name>
+    <Name>DBO.DataTransport.DBOStore.SQL</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{2a54fb18-560a-4bcc-8aeb-96e28407a47a}</ProjectGuid>
+    <ProjectGuid>{1835f458-d9fd-43b5-abcd-35ddcef01f5e}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>DBO.DataTransport.DBO.SQL</RootNamespace>
-    <AssemblyName>DBO.DataTransport.DBO.SQL</AssemblyName>
+    <RootNamespace>DBO.DataTransport.DBOStore.SQL</RootNamespace>
+    <AssemblyName>DBO.DataTransport.DBOStore.SQL</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>

@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBO.DataTransport.HelpersCo
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBO.DataTransport.DBOAuth.SQL", "DBO.DataTransport.SQL\DBO.DataTransport.DBOAuth.SQL.sqlproj", "{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBO.DataTransport.DBO.SQL", "DBO.DataTransport.DBO.SQL\DBO.DataTransport.DBO.SQL.sqlproj", "{2A54FB18-560A-4BCC-8AEB-96E28407A47A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.DBOStore.DataModel", "DBO.DataTransport.DBOStore.DataModel\DBO.DataTransport.DBOStore.DataModel.csproj", "{203CED7B-F81F-4E33-95BC-D92F81DD944C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.DBOAuth.DataModel", "DBO.DataTransport.DBOAuth.DataModel\DBO.DataTransport.DBOAuth.DataModel.csproj", "{7E96132E-3824-4B9B-A709-71EA2602C00E}"
@@ -41,12 +39,6 @@ Global
 		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{2A54FB18-560A-4BCC-8AEB-96E28407A47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A54FB18-560A-4BCC-8AEB-96E28407A47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A54FB18-560A-4BCC-8AEB-96E28407A47A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{2A54FB18-560A-4BCC-8AEB-96E28407A47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A54FB18-560A-4BCC-8AEB-96E28407A47A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A54FB18-560A-4BCC-8AEB-96E28407A47A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{203CED7B-F81F-4E33-95BC-D92F81DD944C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{203CED7B-F81F-4E33-95BC-D92F81DD944C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{203CED7B-F81F-4E33-95BC-D92F81DD944C}.Release|Any CPU.ActiveCfg = Release|Any CPU

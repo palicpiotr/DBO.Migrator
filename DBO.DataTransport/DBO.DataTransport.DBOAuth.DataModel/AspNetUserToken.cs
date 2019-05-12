@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DBO.DataTransport.DBOStore.DataModel
+namespace DBO.DataTransport.DBOAuth.DataModel
 {
     public partial class AspNetUserToken
     {

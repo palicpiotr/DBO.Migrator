@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace DBO.DataTransport.DBOStore.DataModel
+namespace DBO.DataTransport.DBOAuth.DataModel
 {
     public partial class DBOAuthContext : DbContext
     {
