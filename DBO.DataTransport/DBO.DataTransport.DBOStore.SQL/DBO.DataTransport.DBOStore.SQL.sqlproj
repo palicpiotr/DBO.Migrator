@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>DBO.DataTransport.DBOAuth.SQL</Name>
+    <Name>DBO.DataTransport.DBOStore.SQL</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{6e5d30bd-6c11-4362-8c33-47cf94ebee0c}</ProjectGuid>
+    <ProjectGuid>{1835f458-d9fd-43b5-abcd-35ddcef01f5e}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>DBO.DataTransport.SQL</RootNamespace>
-    <AssemblyName>DBO.DataTransport.SQL</AssemblyName>
+    <RootNamespace>DBO.DataTransport.DBOStore.SQL</RootNamespace>
+    <AssemblyName>DBO.DataTransport.DBOStore.SQL</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -59,14 +59,18 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AspNetUsers.sql" />
-    <None Include="AspNetRoleClaims.sql" />
-    <None Include="AspNetUserClaims.sql" />
-    <None Include="AspNetUserLogins.sql" />
-    <None Include="AspNetUserRoles.sql" />
-    <None Include="AspNetUserTokens.sql" />
-    <None Include="CreateIndexes.sql" />
+    <None Include="Projects.sql" />
+    <None Include="SupportedRDBMS.sql" />
     <None Include="Migrations.sql" />
     <None Include="__EFMigrationsHistory.sql" />
+    <None Include="DBOTransportHistory.sql" />
+    <None Include="ActionTypes.sql" />
+    <None Include="ForeignKeys.sql" />
+    <None Include="RDBMSConfigurations.sql" />
+    <None Include="ProjectRDBMSRelationships.sql" />
+    <None Include="PostgreSQLConfigurations.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLServerConfigurations.sql" />
   </ItemGroup>
 </Project>

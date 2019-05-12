@@ -15,4 +15,10 @@
     <PackageReference Include="TBB.EntityFrameworkCore.SqlServer" Version="0.0.5.5" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBO.DataTransport.DBOAuth.DataModel\DBO.DataTransport.DBOAuth.DataModel.csproj" />
+    <ProjectReference Include="..\DBO.DataTransport.DBOStore.DataModel\DBO.DataTransport.DBOStore.DataModel.csproj" />
+  </ItemGroup>
+
 </Project>
