@@ -8,7 +8,7 @@ CREATE TABLE [Projects] (
 	[OwnerId] nvarchar(450) NOT NULL,
 	[CreationDate] datetime NOT NULL,
 	[UpdateDate] datetime NOT NULL,
-	[Description] nvarchar(max) NULL,
+	[Description] nvarchar(max) NULL
 	CONSTRAINT [PK_Projects_ProjectId] PRIMARY KEY ([ProjectId])
 );
 
