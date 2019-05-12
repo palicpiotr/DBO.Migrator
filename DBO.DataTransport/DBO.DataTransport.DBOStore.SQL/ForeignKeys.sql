@@ -26,3 +26,7 @@ ADD CONSTRAINT FK_ProjectRDBMSRelationships_SupportedRDBMS_Owner FOREIGN KEY(RDB
 ALTER TABLE ProjectRDBMSRelationships
 ADD CONSTRAINT FK_ProjectRDBMSRelationships_SupportedRDBMS_Consumer FOREIGN KEY(RDBMSConsumerId)
 	REFERENCES SupportedRDBMS(RDBMSId)
+
+ALTER TABLE ProjectRDBMSRelationships
+ADD CONSTRAINT FK_ProjectRDBMSRelationships_Projects FOREIGN KEY(ProjectId)
+	REFERENCES Projects(ProjectId)
