@@ -20,26 +20,32 @@ namespace DBO.DataTransport.DBOStore.DataModel.Pluralazing
         private static readonly Dictionary<string, string> _replacementItems = new Dictionary<string, string>
         {
             {
-                "AspNetRoleClaims","AspNetRoleClaim"
+                "ActionTypes","ActionType"
             },
             {
-                "AspNetRoles","AspNetRole"
+                "DBOTransportHistory","DBOTransportHistory"
             },
             {
-                "AspNetUserClaims","AspNetUserClaim"
+                "PostgreSQLConfigurations","PostgreSQLConfiguration"
             },
             {
-                "AspNetUserLogins","AspNetUserLogin"
+                "ProjectRDBMSRelationships","ProjectRDBMSRelationship"
             },
             {
-                "AspNetUserRoles","AspNetUserRole"
+                "Projects","Project"
             },
             {
-                "AspNetUsers","AspNetUser"
+                "RDBMSConfigurations","RDBMSConfiguration"
             },
             {
-                "AspNetUserTokens","AspNetUserToken"
+                "SQLServerConfigurations","SQLServerConfiguration"
             },
+            {
+                "SupportedRDBMS","SupportedRDBMS"
+            },
+            {
+                "", ""
+            }
         };
 
         public string Pluralize(string identifier) => _replacementBackItems.TryGetValue(identifier, out var cName) ? cName : identifier;
