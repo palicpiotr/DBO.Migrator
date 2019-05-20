@@ -1,10 +1,27 @@
-﻿@{
+﻿@using DBO.DataTransport.Common.MappingModels
+
+@{
     ViewData["Title"] = "Projects";
 }
 
 
-@(Html.Kendo().DropDownList()
-        .Name("test")
-        .OptionLabel("Select A")
-
-)
+@(Html.Kendo().Grid<ProjectMappingModel>()
+    .Name("projectsGrid")
+    .Columns(c =>
+    {
+        c.Bound(x => x.ProjectId).Visible(false);
+        c.Bound(x => x.Name);
+        c.Bound(x => x.Type);
+        c.Bound(x => x.CreationDate);
+        c.Bound(x => x.UpdateDate);
+        c.Bound(x => x.Description);
+    })
+    .DataSource(ds =>
+    {
+        ds.Ajax()
+            .Read(r => r.Action("GetProjects", "Project"));
+    })
+    .Filterable()
+    .Pageable()
+    .Scrollable()
+    )

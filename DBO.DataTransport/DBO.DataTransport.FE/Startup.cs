@@ -15,6 +15,10 @@ using DBO.DataTransport.DBOStore.DataModel;
 using DBO.DataTransport.DBOAuth.DataModel;
 using DBO.DataTransport.DBOStore.DataAccess.Providers;
 using DBO.DataTransport.FE.Controllers;
+using Microsoft.Extensions.Logging;
+using System.Globalization;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Localization;
 
 namespace DBO.DataTransport.FE
 {
@@ -90,7 +94,7 @@ namespace DBO.DataTransport.FE
             return new AutofacServiceProvider(container);
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -104,6 +108,16 @@ namespace DBO.DataTransport.FE
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            IList<CultureInfo> supportedCultures = new List<CultureInfo>
+            {
+                new CultureInfo("en-US"),
+            };
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("en-US"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            });
             app.UseCookiePolicy();
 
             app.UseAuthentication();
