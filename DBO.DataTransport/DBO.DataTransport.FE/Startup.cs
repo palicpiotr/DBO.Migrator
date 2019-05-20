@@ -8,6 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using DBO.DataTransport.FE.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using DBO.DataTransport.DBOStore.DataModel;
+using DBO.DataTransport.DBOAuth.DataModel;
+using DBO.DataTransport.DBOStore.DataAccess.Providers;
+using DBO.DataTransport.FE.Controllers;
 
 namespace DBO.DataTransport.FE
 {
@@ -29,7 +36,7 @@ namespace DBO.DataTransport.FE
             Configuration = builder.Build();
         }
 
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -46,6 +53,41 @@ namespace DBO.DataTransport.FE
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddKendo();
+
+            return BuildAutofacContainer(services);
+        }
+
+        private IServiceProvider BuildAutofacContainer(IServiceCollection services)
+        {
+            var builder = new ContainerBuilder();
+
+            builder.Register(c =>
+            {
+                var optionsBuilder = new DbContextOptionsBuilder<DBOStoreContext>()
+                           .UseSqlServer(Configuration.GetConnectionString("StoreConnection"));
+                return new DBOStoreContext(optionsBuilder.Options);
+            }).As<DBOStoreContext>().InstancePerLifetimeScope();
+
+            builder.Register(c =>
+            {
+                var optionsBuilder = new DbContextOptionsBuilder<DBOAuthContext>()
+                            .UseSqlServer(Configuration.GetConnectionString("DBOAuth"));
+                return new DBOAuthContext(optionsBuilder.Options);
+            }).As<DBOAuthContext>().InstancePerLifetimeScope();
+
+            builder.RegisterType<ProjectProvider>().As<IProjectProvider>().InstancePerDependency();
+            builder.RegisterType<PostgreSQLConfigProvider>().As<IPostgreSQLConfigProvider>().InstancePerDependency();
+            builder.RegisterType<SQLServerConfigProvider>().As<ISQLServerConfigProvider>().InstancePerDependency();
+            builder.RegisterType<SupportedProvider>().As<ISupportedProvider>().InstancePerDependency();
+
+            builder.RegisterType<HomeController>().InstancePerLifetimeScope();
+            builder.RegisterType<ProjectController>().InstancePerLifetimeScope();
+
+            builder.Populate(services);
+            var container = builder.Build();
+            return new AutofacServiceProvider(container);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -60,7 +102,6 @@ namespace DBO.DataTransport.FE
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

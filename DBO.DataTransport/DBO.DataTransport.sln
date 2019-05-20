@@ -11,11 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBO.DataTransport.HelpersCo
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBO.DataTransport.DBOAuth.SQL", "DBO.DataTransport.SQL\DBO.DataTransport.DBOAuth.SQL.sqlproj", "{6E5D30BD-6C11-4362-8C33-47CF94EBEE0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.DBOStore.DataModel", "DBO.DataTransport.DBOStore.DataModel\DBO.DataTransport.DBOStore.DataModel.csproj", "{203CED7B-F81F-4E33-95BC-D92F81DD944C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBO.DataTransport.DBOStore.DataModel", "DBO.DataTransport.DBOStore.DataModel\DBO.DataTransport.DBOStore.DataModel.csproj", "{203CED7B-F81F-4E33-95BC-D92F81DD944C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.DBOAuth.DataModel", "DBO.DataTransport.DBOAuth.DataModel\DBO.DataTransport.DBOAuth.DataModel.csproj", "{7E96132E-3824-4B9B-A709-71EA2602C00E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBO.DataTransport.DBOAuth.DataModel", "DBO.DataTransport.DBOAuth.DataModel\DBO.DataTransport.DBOAuth.DataModel.csproj", "{7E96132E-3824-4B9B-A709-71EA2602C00E}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBO.DataTransport.DBOStore.SQL", "DBO.DataTransport.DBOStore.SQL\DBO.DataTransport.DBOStore.SQL.sqlproj", "{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBO.DataTransport.DBOStore.DataAccess", "DBO.DataTransport.DBOStore.DataAccess\DBO.DataTransport.DBOStore.DataAccess.csproj", "{981993AA-24E0-4E8B-AEE2-001B48EE5ED1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBO.DataTransport.DBOAuth.DataAccess", "DBO.DataTransport.DBOAuth.DataAccess\DBO.DataTransport.DBOAuth.DataAccess.csproj", "{B819CF54-F601-44C9-B3F0-F045C8BE71EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBO.DataTransport.Common", "DBO.DataTransport.Common\DBO.DataTransport.Common.csproj", "{61B20C04-F5CF-4822-8C67-DB5DD2DA8CD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +61,18 @@ Global
 		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1835F458-D9FD-43B5-ABCD-35DDCEF01F5E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{981993AA-24E0-4E8B-AEE2-001B48EE5ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981993AA-24E0-4E8B-AEE2-001B48EE5ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981993AA-24E0-4E8B-AEE2-001B48EE5ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981993AA-24E0-4E8B-AEE2-001B48EE5ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B819CF54-F601-44C9-B3F0-F045C8BE71EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B819CF54-F601-44C9-B3F0-F045C8BE71EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B819CF54-F601-44C9-B3F0-F045C8BE71EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B819CF54-F601-44C9-B3F0-F045C8BE71EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B20C04-F5CF-4822-8C67-DB5DD2DA8CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B20C04-F5CF-4822-8C67-DB5DD2DA8CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B20C04-F5CF-4822-8C67-DB5DD2DA8CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B20C04-F5CF-4822-8C67-DB5DD2DA8CD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
