@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DBO.DataTransport.DBOStore.DataModel\DBO.DataTransport.DBOStore.DataModel.csproj" />
+  </ItemGroup>
+
 </Project>
