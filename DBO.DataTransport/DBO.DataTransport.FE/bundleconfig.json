@@ -1,8 +1,157 @@
 [
   {
-    "outputFileName": "wwwroot/js/site.min.js",
+    "outputFileName": "wwwroot/highlight/highlight.pack.min.js",
     "inputFiles": [
-      "wwwroot/js/site.js"
+      "wwwroot/highlight/highlight.pack.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/highlight/styles/default.min.css",
+    "inputFiles": [
+      "wwwroot/highlight/styles/default.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/modernizr.js",
+    "inputFiles": [
+      "wwwroot/Scripts/kendo.modernizr.custom.js",
+      "wwwroot/Scripts/modernizr-2.6.2.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/TemplateInit.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/TemplateInit.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/jquery/dist/jquery.min.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/jquery/dist/jquery.min.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/build/css/custom.min.css",
+    "inputFiles": [
+      "wwwroot/gentelella/build/css/custom.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/build/js/custom.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/build/js/custom.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.min.css",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/bootstrap-progressbar/bootstrap-progressbar.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/bootstrap/dist/css/bootstrap-dist-css.css",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/bootstrap/dist/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/bootstrap/dist/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/font-awesome/css/font-awesome.min.css",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/font-awesome/css/font-awesome.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/jquery-ui/jquery-ui.min.css",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/jquery-ui/jquery-ui.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/jquery-ui/jquery-ui.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/jquery-ui/jquery-ui.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/moment/min/moment.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/vendors/moment/moment.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/pnotify/dist/pnotify.min.css",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/pnotify/dist/pnotify.css",
+      "wwwroot/gentelella/vendors/pnotify/dist/pnotify.buttons.css",
+      "wwwroot/gentelella/vendors/pnotify/dist/pnotify.nonblock.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/skycons/skycons.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/skycons/skycons.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/CommonFunctions.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/CommonFunctions.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/jquery.unobtrusive-ajax.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jquery.unobtrusive-ajax.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/kendo.modernizr.custom.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/kendo.modernizr.custom.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/modernizr-2.6.2.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/modernizr-2.6.2.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/moment/moment.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/moment/moment.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/gentelella/vendors/pnotify/dist/pnotify.min.js",
+    "inputFiles": [
+      "wwwroot/gentelella/vendors/pnotify/dist/pnotify.js",
+      "wwwroot/gentelella/vendors/pnotify/dist/pnotify.buttons.js",
+      "wwwroot/gentelella/vendors/pnotify/dist/pnotify.nonblock.js"
     ]
   }
 ]

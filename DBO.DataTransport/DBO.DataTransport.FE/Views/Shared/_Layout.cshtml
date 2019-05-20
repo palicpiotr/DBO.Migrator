@@ -15,7 +15,8 @@
               crossorigin="anonymous"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
-    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" />  
 
     <link href="https://kendo.cdn.telerik.com/2018.2.516/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
     <link href="https://kendo.cdn.telerik.com/2018.2.516/styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
@@ -34,6 +35,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.3/jquery-confirm.min.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/kendo.modernizr.custom.min.js"></script>
+
+    <script src="~/highlight/highlight.pack.min.js"></script>
+
+    <script type="text/javascript">
+
+        jQuery.ajaxSettings.traditional = true;
+
+        function showResultWindow(message, code) {
+
+            var head = code ? "SuccessTitle" : "ErrorTitle";
+            var type = code ? "success" : "error";
+
+            showPopupMessage(head, message, type);
+        }
+
+    </script>
 
 </head>
 <body>
@@ -78,7 +97,7 @@
         </div>
     </footer>
 
-    <environment include="Development">
+    @*<environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </environment>
@@ -96,7 +115,19 @@
                 integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
         </script>
     </environment>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
+
+    <script src="~/gentelella/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/gentelella/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="~/gentelella/vendors/skycons/skycons.min.js"></script>
+    <script src="~/gentelella/vendors/moment/moment.min.js"></script>
+    <script src="~/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+    <script src="~/gentelella/build/js/custom.min.js"></script>
+    <script src="~/gentelella/vendors/pnotify/dist/pnotify.min.js"></script>
+
+    <script src="~/Scripts/TemplateInit.min.js"></script>
+
 
     @(await RenderSectionAsync("Scripts", required: false))
 
