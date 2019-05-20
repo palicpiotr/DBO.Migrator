@@ -53,6 +53,9 @@ namespace DBO.DataTransport.FE
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddKendo();
+
             return BuildAutofacContainer(services);
         }
 
@@ -99,7 +102,6 @@ namespace DBO.DataTransport.FE
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

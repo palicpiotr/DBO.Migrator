@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DBO.DataTransport.Common\DBO.DataTransport.Common.csproj" />
     <ProjectReference Include="..\DBO.DataTransport.DBOStore.DataModel\DBO.DataTransport.DBOStore.DataModel.csproj" />
   </ItemGroup>
 
