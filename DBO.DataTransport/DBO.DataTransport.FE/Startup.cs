@@ -73,7 +73,7 @@ namespace DBO.DataTransport.FE
             builder.Register(c =>
             {
                 var optionsBuilder = new DbContextOptionsBuilder<DBOAuthContext>()
-                            .UseSqlServer(Configuration.GetConnectionString("DBOAuth"));
+                            .UseSqlServer(Configuration.GetConnectionString("AuthConnection"));
                 return new DBOAuthContext(optionsBuilder.Options);
             }).As<DBOAuthContext>().InstancePerLifetimeScope();
 
